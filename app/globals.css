@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --eek-navy: #0a1628;
+  --eek-navy-mid: #0d1f3c;
+  --eek-blue: #1a3a6e;
+  --eek-blue-light: #2a5298;
+  --eek-accent: #5b9bd5;
+  --eek-white: #f0f2f5;
+  --eek-gold: #b8922a;
+  --background: var(--eek-navy);
+  --foreground: var(--eek-white);
 }
 
 @theme inline {
@@ -12,15 +19,86 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--eek-navy);
+  color: var(--eek-white);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Form select options — light theme form */
+select option {
+  background: #ffffff;
+  color: #071426;
+}
+
+/* Process section animations */
+@keyframes eek-shimmer {
+  0%   { transform: translateX(-180%); }
+  100% { transform: translateX(520%); }
+}
+@keyframes eek-nucleus-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.72; }
+}
+@keyframes eek-particle-fly {
+  0%   { opacity: 0.8;  transform: translate(-50%, -50%) scale(1); }
+  70%  { opacity: 0.2;  }
+  100% { opacity: 0;    transform: translate(calc(-50% + var(--ptx)), calc(-50% + var(--pty))) scale(0.15); }
+}
+@keyframes eek-pulse-ring {
+  0%   { transform: translate(-50%, -50%) scale(1);   opacity: 0.7; }
+  100% { transform: translate(-50%, -50%) scale(2.4); opacity: 0;   }
+}
+@keyframes eek-box-appear {
+  0%   { opacity: 0; transform: scale(0.35) rotate(-14deg); }
+  65%  { opacity: 1; transform: scale(1.12) rotate(2deg);   }
+  100% { opacity: 1; transform: scale(1)    rotate(0deg);   }
+}
+@keyframes eek-wave-flow {
+  0%   { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -20; }
+}
+@keyframes eek-cargo-roll {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal,
+  .reveal.visible {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
