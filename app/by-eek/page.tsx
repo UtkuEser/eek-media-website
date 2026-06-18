@@ -30,7 +30,6 @@ function GlassLink({ href, children }: { href: string; children: React.ReactNode
       target="_blank"
       rel="noopener noreferrer"
       onMouseMove={onMove}
-      onMouseLeave={onLeave}
       className={[
         'group relative inline-flex items-center gap-3 rounded-full px-9 py-[18px]',
         'border border-white/[0.13] bg-white/[0.06] backdrop-blur-md',
