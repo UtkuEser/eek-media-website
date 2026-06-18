@@ -51,17 +51,17 @@ export function LiquidGlassButton({
         onMouseLeave={handleMouseLeave}
         onClick={handleClick}
         className={cn(
-          'relative overflow-hidden rounded-full px-7 py-3 text-[0.82rem] font-medium tracking-[0.06em] backdrop-blur-sm transition-all duration-300',
-          'bg-white/[0.16] text-white border border-white/[0.22]',
-          'hover:bg-white/[0.22] hover:border-white/[0.35] hover:text-white',
-          'hover:shadow-[0_0_32px_rgba(120,168,255,0.20),inset_0_1px_0_rgba(255,255,255,0.18)]',
+          'relative overflow-hidden rounded-full px-[34px] py-4 text-[1rem] md:text-[1.05rem] lg:text-[1.2rem] font-medium tracking-[0.02em] backdrop-blur-sm transition-all duration-300 min-h-[60px] max-w-[420px]',
+          'bg-white/[0.15] text-white border border-white/[0.20]',
+          'hover:bg-white/[0.20] hover:border-white/[0.30] hover:text-white hover:scale-[1.02]',
+          'hover:shadow-[0_0_28px_rgba(120,168,255,0.18),inset_0_1px_0_rgba(255,255,255,0.18)]',
           'active:scale-[0.97]',
-          '[background-image:radial-gradient(circle_at_var(--mx,50%)_var(--my,50%),rgba(140,190,255,0.14)_0%,transparent_60%)]',
+          '[background-image:radial-gradient(circle_at_var(--mx,50%)_var(--my,50%),rgba(140,190,255,0.10)_0%,transparent_55%)]',
           className
         )}
         style={{
           willChange: 'transform',
-          boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.14), inset 0 0 0 0.5px rgba(255,255,255,0.06), 0 2px 12px rgba(80,130,255,0.08)',
+          boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.14), inset 0 0 0 0.5px rgba(255,255,255,0.06), 0 4px 16px rgba(80,130,255,0.09)',
         }}
       >
         {ripple && (

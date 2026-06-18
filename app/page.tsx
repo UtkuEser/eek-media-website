@@ -15,18 +15,78 @@ const NAV_LINKS = [
 ];
 
 const SERVICES = [
-  { num: '01', title: 'Marka Stratejisi ve Konumlandırma',
-    desc: 'Markanın pazardaki yerini, mesajını ve algı yönünü netleştiririz.' },
-  { num: '02', title: 'Reklam Yönetimi ve Funnel',
-    desc: 'Meta, Google ve yeniden pazarlama yapısını yalnızca trafik için değil, talep üretmek için kurgularız.' },
-  { num: '03', title: 'Kreatif ve İçerik Sistemi',
-    desc: 'Görsel, video, reklam metni ve kampanya içeriklerini markanın algı hedefiyle uyumlu üretiriz.' },
-  { num: '04', title: 'Web Sitesi ve Landing Page',
-    desc: 'Markanın güven veren dijital vitrinini ve dönüşüm odaklı sayfalarını kurarız.' },
-  { num: '05', title: 'Lead Takibi ve Otomasyon',
-    desc: 'Başvuru, form, WhatsApp, CRM ve takip süreçlerini daha kontrollü hale getiririz.' },
-  { num: '06', title: 'Raporlama ve Gelişim',
-    desc: 'Veriyi yalnızca tablo olarak değil, karar sistemi olarak kullanırız.' },
+  {
+    num: '01', title: 'Marka Stratejisi ve Konumlandırma',
+    desc: 'Markanın pazardaki yerini, mesajını ve algı yönünü netleştiririz.',
+    detail: 'Markanın pazarda nasıl algılandığını, hangi mesajla öne çıkacağını ve hedef kitlenin zihninde nasıl bir yer edinmesi gerektiğini netleştiririz. Bu çalışma, reklamdan web sitesine kadar tüm dijital iletişimin daha tutarlı ve güven veren bir zemine oturmasını sağlar.',
+    bullets: [
+      'Marka algısı ve mevcut dijital görünüm analizi',
+      'Hedef kitle, karar süreci ve güven bariyerlerinin incelenmesi',
+      'Rakip ve kategori konumlandırması',
+      'Ana mesaj, ton ve iletişim yönünün netleştirilmesi',
+    ],
+    goal: 'Markanın yalnızca görünür olmasını değil, doğru şekilde anlaşılmasını sağlamak.',
+  },
+  {
+    num: '02', title: 'Reklam Yönetimi ve Funnel',
+    desc: 'Meta, Google ve yeniden pazarlama yapısını yalnızca trafik için değil, talep üretmek için kurgularız.',
+    detail: 'Reklam yapısını yalnızca trafik almak için değil, nitelikli talep üretmek için kurgularız. Meta, Google ve yeniden pazarlama akışlarını markanın hedeflerine göre yapılandırır; kullanıcıyı ilk temas noktasından görüşme talebine kadar kontrollü bir akış içinde ilerletiriz.',
+    bullets: [
+      'Meta Ads ve Google Ads kampanya mimarisi',
+      'Soğuk kitle, sıcak kitle ve yeniden pazarlama akışları',
+      'Reklam metni, kreatif ve hedefleme uyumu',
+      'Dönüşüm, form, WhatsApp ve lead takip bağlantıları',
+    ],
+    goal: 'Reklam bütçesini sadece görünürlük için değil, ölçülebilir talep üretimi için kullanmak.',
+  },
+  {
+    num: '03', title: 'Kreatif ve İçerik Sistemi',
+    desc: 'Görsel, video, reklam metni ve kampanya içeriklerini markanın algı hedefiyle uyumlu üretiriz.',
+    detail: 'Markanın dijitalde nasıl göründüğü, kullanıcıların markaya duyduğu güveni doğrudan etkiler. Bu nedenle içerikleri yalnızca paylaşım yapmak için değil; algı oluşturmak, güven üretmek ve reklam performansını desteklemek için tasarlarız.',
+    bullets: [
+      'Reklam kreatifleri ve kampanya görselleri',
+      'Reels, post ve story içerik kurguları',
+      'Marka diliyle uyumlu reklam metinleri',
+      'Görsel bütünlük, mesaj hiyerarşisi ve içerik planı',
+    ],
+    goal: 'Markanın her temas noktasında aynı kalite ve güven hissini vermesini sağlamak.',
+  },
+  {
+    num: '04', title: 'Web Sitesi ve Landing Page',
+    desc: 'Markanın güven veren dijital vitrinini ve dönüşüm odaklı sayfalarını kurarız.',
+    detail: 'Web sitesi, markanın dijitaldeki güven merkezidir. Bu yapıyı yalnızca estetik bir vitrin olarak değil; kullanıcıyı bilgilendiren, ikna eden ve doğru aksiyona yönlendiren bir sistem olarak ele alırız.',
+    bullets: [
+      'Kurumsal web sitesi veya landing page yapısı',
+      'Hizmet, teklif ve güven unsurlarının doğru sunumu',
+      'Form, WhatsApp ve iletişim yönlendirmeleri',
+      'Mobil uyum, hız, SEO temel yapısı ve dönüşüm akışı',
+    ],
+    goal: 'Markanın dijital vitrinini daha güvenilir, anlaşılır ve aksiyon alınabilir hale getirmek.',
+  },
+  {
+    num: '05', title: 'Lead Takibi ve Otomasyon',
+    desc: 'Başvuru, form, WhatsApp, CRM ve takip süreçlerini daha kontrollü hale getiririz.',
+    detail: 'Reklamdan gelen talebin değer kazanması için doğru şekilde takip edilmesi gerekir. Form, WhatsApp, CRM ve bildirim akışlarını düzenleyerek gelen taleplerin kaybolmasını engeller ve satış sürecini daha kontrollü hale getiririz.',
+    bullets: [
+      'Form ve WhatsApp talep akışlarının düzenlenmesi',
+      'CRM veya tablo bazlı lead takip sistemi',
+      'Otomatik bildirim ve yönlendirme yapıları',
+      'Talep kaynağı, durum ve dönüşüm takibi',
+    ],
+    goal: 'Gelen her müşteri talebinin daha düzenli, ölçülebilir ve takip edilebilir hale gelmesini sağlamak.',
+  },
+  {
+    num: '06', title: 'Raporlama ve Gelişim',
+    desc: 'Veriyi yalnızca tablo olarak değil, karar sistemi olarak kullanırız.',
+    detail: 'Dijital pazarlama tek seferlik bir kurulum değil, düzenli gelişen bir sistemdir. Reklam, içerik, web ve lead verilerini birlikte okuyarak hangi alanların güçlendirilmesi gerektiğini belirleriz.',
+    bullets: [
+      'Haftalık veya aylık performans değerlendirmesi',
+      'Reklam, içerik ve dönüşüm verilerinin analizi',
+      'Kreatif, hedefleme ve funnel optimizasyon önerileri',
+      'Yeni test alanları ve gelişim aksiyonları',
+    ],
+    goal: 'Veriyi yalnızca raporlamak değil, markanın dijital sistemini daha iyi kararlarla geliştirmek.',
+  },
 ];
 
 const STEPS = [
@@ -107,18 +167,38 @@ const REFERENCES = [
 
 const INPUT_CLS = [
   'w-full rounded-lg border border-[#d1d9e0] bg-white px-4 py-3',
-  'text-[0.875rem] text-[#071426] placeholder:text-[#9aabb8]',
-  'focus:border-[#3b7dbf]/50 focus:outline-none',
-  'transition-colors duration-200',
+  'text-[0.875rem] text-[#0F1B2D] placeholder:text-[#9aabb8]',
+  'focus:border-[#2F6BFF]/60 focus:outline-none focus:shadow-[0_0_0_3px_rgba(47,107,255,0.10)]',
+  'transition-[border-color,box-shadow] duration-200',
 ].join(' ');
 
 // ─── Navbar ──────────────────────────────────────────────────────────────────
 
 function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen]         = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/[0.06] bg-[#0a1628]/85 backdrop-blur-md">
+    <header
+      className="fixed top-0 left-0 right-0 z-50"
+      style={{
+        backgroundColor: scrolled ? 'rgba(8,18,37,0.94)' : 'rgba(5,11,24,0.18)',
+        backdropFilter: scrolled ? 'blur(18px)' : 'blur(10px)',
+        WebkitBackdropFilter: scrolled ? 'blur(18px)' : 'blur(10px)',
+        borderBottom: scrolled
+          ? '1px solid rgba(156,194,230,0.14)'
+          : '1px solid rgba(255,255,255,0.06)',
+        boxShadow: scrolled ? '0 12px 40px rgba(0,0,0,0.22)' : 'none',
+        transition: 'background-color 300ms ease, backdrop-filter 300ms ease, -webkit-backdrop-filter 300ms ease, border-color 300ms ease, box-shadow 300ms ease',
+      }}
+    >
       <div className="flex items-center justify-between px-6 py-4 md:px-12">
         <a href="#" className="text-base font-semibold tracking-widest text-white/90 uppercase">
           EEK Media
@@ -127,14 +207,32 @@ function Navbar() {
         <nav className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map(l => (
             <a key={l.href} href={l.href}
-               className="text-sm text-white/55 hover:text-white/90 transition-colors duration-200 tracking-wide">
+               className="text-sm text-white/58 hover:text-white/90 transition-colors duration-200 tracking-wide">
               {l.label}
             </a>
           ))}
         </nav>
 
-        <a href="#basvuru"
-           className="hidden md:inline-flex items-center rounded-full border border-white/[0.13] px-5 py-2 text-sm text-white/55 hover:text-white/85 hover:border-white/25 transition-all duration-200 tracking-wide">
+        <a
+          href="#basvuru"
+          className="hidden md:inline-flex items-center rounded-full px-5 py-2 text-sm tracking-wide"
+          style={{
+            border: scrolled ? '1px solid rgba(156,194,230,0.22)' : '1px solid rgba(255,255,255,0.14)',
+            color: scrolled ? 'rgba(255,255,255,0.78)' : 'rgba(255,255,255,0.60)',
+            background: scrolled ? 'rgba(255,255,255,0.03)' : 'transparent',
+            transition: 'border-color 300ms ease, color 300ms ease, background 300ms ease, box-shadow 200ms ease',
+          }}
+          onMouseEnter={e => {
+            (e.currentTarget as HTMLAnchorElement).style.color = 'rgba(255,255,255,0.92)';
+            (e.currentTarget as HTMLAnchorElement).style.boxShadow = scrolled
+              ? '0 0 0 1px rgba(156,194,230,0.25), 0 0 14px rgba(156,194,230,0.14)'
+              : '0 0 0 1px rgba(255,255,255,0.18)';
+          }}
+          onMouseLeave={e => {
+            (e.currentTarget as HTMLAnchorElement).style.color = scrolled ? 'rgba(255,255,255,0.78)' : 'rgba(255,255,255,0.60)';
+            (e.currentTarget as HTMLAnchorElement).style.boxShadow = 'none';
+          }}
+        >
           Görüşme Talebi
         </a>
 
@@ -159,7 +257,10 @@ function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-white/[0.06] bg-[#0a1628]/95">
+        <div
+          className="md:hidden border-t border-white/[0.07]"
+          style={{ backgroundColor: 'rgba(8,18,37,0.97)' }}
+        >
           <nav className="flex flex-col px-6 py-3">
             {NAV_LINKS.map(l => (
               <a key={l.href} href={l.href} onClick={() => setOpen(false)}
@@ -168,7 +269,7 @@ function Navbar() {
               </a>
             ))}
             <a href="#basvuru" onClick={() => setOpen(false)}
-               className="mt-3 pb-2 text-sm text-[#5b9bd5]/72 hover:text-[#5b9bd5] transition-colors">
+               className="mt-3 pb-2 text-sm text-[#38C7FF]/72 hover:text-[#38C7FF] transition-colors">
               Görüşme Talebi
             </a>
           </nav>
@@ -183,7 +284,7 @@ function Navbar() {
 
 function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#0a1628]">
+    <section className="relative min-h-screen overflow-hidden bg-[#081225]">
       <div className="absolute inset-0 z-0">
         <WebGLShader className="w-full h-full" />
       </div>
@@ -197,76 +298,290 @@ function Hero() {
       />
 
       <div className="relative z-10 flex flex-col items-center text-center px-6 pt-[17vh]">
-        <p className="mb-6 text-[10px] font-medium tracking-[0.22em] text-[#5b9bd5]/70 uppercase">
+        <p
+          className="mb-6 text-[10px] font-medium tracking-[0.22em] text-[#38C7FF]/70 uppercase"
+          style={{ animation: 'eek-hero-in 0.7s cubic-bezier(0.22,1,0.36,1) 200ms both' }}
+        >
           Stratejik Dijital Pazarlama Stüdyosu
         </p>
 
-        <h1 className="mb-5 text-[2.4rem] md:text-[3.2rem] lg:text-[4.2rem] font-semibold leading-[1.13] tracking-[-0.022em] text-white">
+        <h1
+          className="mb-7 max-w-[56rem] text-[2rem] md:text-[3rem] lg:text-[4rem] font-semibold leading-[1.10] tracking-[-0.02em] text-white"
+          style={{ animation: 'eek-hero-in 0.85s cubic-bezier(0.22,1,0.36,1) 460ms both' }}
+        >
           <span className="block">Görünürlük başlangıçtır.</span>
           <span className="block text-[#bdd8f2]">Güven tercih sebebidir.</span>
         </h1>
 
-        <p className="mb-5 max-w-[30rem] text-[0.95rem] leading-[1.82] text-white/72">
+        <p
+          className="mb-7 max-w-[55rem] text-[1rem] md:text-[1.2rem] lg:text-[1.5rem] leading-[1.45] font-light text-white/66"
+          style={{ animation: 'eek-hero-in 0.7s cubic-bezier(0.22,1,0.36,1) 800ms both' }}
+        >
           EEK Media, markaların dijitalde daha doğru görünmesini, daha güvenilir
           algılanmasını ve daha nitelikli müşteri talepleri almasını sağlayan
           stratejik bir dijital pazarlama stüdyosudur.
         </p>
 
-        <div className="mb-6 flex items-center justify-center gap-2 rounded-full border border-emerald-500/[0.15] bg-black/[0.22] px-4 py-1.5">
-          <span className="w-[5px] h-[5px] shrink-0 rounded-full bg-emerald-400/80 animate-pulse" />
-          <p className="text-[10px] tracking-[0.06em] text-emerald-300/82">
+        <div
+          className="mb-6 flex items-center justify-center gap-2 rounded-full border border-emerald-500/[0.16] bg-black/[0.24] px-6 py-3"
+          style={{ animation: 'eek-hero-in 0.65s cubic-bezier(0.22,1,0.36,1) 1080ms both' }}
+        >
+          <span className="w-[6px] h-[6px] shrink-0 rounded-full bg-emerald-400/75 animate-pulse" />
+          <p className="text-[0.875rem] md:text-[1rem] lg:text-[1.1rem] tracking-[0.04em] text-emerald-300/80">
             Stratejik markalar için sistem odaklı büyüme
           </p>
         </div>
 
-        <LiquidGlassButton>
-          Markanızın Geleceğini Konuşalım
-        </LiquidGlassButton>
+        <div style={{ animation: 'eek-hero-in 0.65s cubic-bezier(0.22,1,0.36,1) 1320ms both' }}>
+          <LiquidGlassButton>
+            Markanızın Geleceğini Konuşalım
+          </LiquidGlassButton>
+        </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-28 z-10 bg-gradient-to-t from-[#0a1628] to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-[100px] z-10 bg-gradient-to-t from-[#081225] to-transparent" />
     </section>
   );
 }
 
 // ─── Ne Yapıyoruz? ───────────────────────────────────────────────────────────
 
-function WhatWeDo() {
+function ServiceDetailPanel({ svc }: { svc: (typeof SERVICES)[number] }) {
   return (
-    <section id="hizmetler" className="scroll-mt-20 bg-[#F7F8FA] py-24 md:py-32 px-6 md:px-12 lg:px-20">
+    <div style={{ animation: 'eek-panel-in 0.28s ease-out both' }}>
+      {/* Main content row */}
+      <div className="grid md:grid-cols-[1fr_280px] gap-8 lg:gap-12 items-start">
+
+        {/* Left: number, title, description */}
+        <div>
+          <p className="mb-2 text-[10px] font-medium tracking-[0.18em] text-[#5C8DFF] uppercase">
+            {svc.num}
+          </p>
+          <h3 className="mb-4 text-[1rem] font-semibold leading-[1.38] tracking-[-0.01em] text-[#0F1B2D]">
+            {svc.title}
+          </h3>
+          <p className="text-[0.875rem] leading-[1.82] text-[#526277]">{svc.detail}</p>
+        </div>
+
+        {/* Right: coverage list */}
+        <div>
+          <p className="mb-3.5 text-[10px] font-semibold tracking-[0.14em] text-[#0F1B2D]/55 uppercase">
+            Bu çalışma neleri kapsar?
+          </p>
+          <ul className="space-y-3">
+            {svc.bullets.map((b, j) => (
+              <li
+                key={b}
+                className="flex items-start gap-3"
+                style={{ animation: `eek-item-in 0.3s ease-out ${90 + j * 60}ms both` }}
+              >
+                <span className="mt-[6px] w-[5px] h-[5px] shrink-0 rounded-full border border-[#5C8DFF]/45 bg-[#5C8DFF]/10" />
+                <span className="text-[0.83rem] leading-[1.65] text-[#526277]">{b}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+      </div>
+
+      {/* Goal line */}
+      <div
+        className="mt-7 pt-5 border-t border-[#C4CFD9] flex items-start gap-2"
+        style={{ animation: 'eek-item-in 0.3s ease-out 330ms both' }}
+      >
+        <span className="shrink-0 text-[10px] font-semibold tracking-[0.12em] text-[#5C8DFF]/80 uppercase mt-[1px]">
+          Amaç
+        </span>
+        <span className="text-[0.83rem] leading-[1.65] text-[#526277]">{svc.goal}</span>
+      </div>
+    </div>
+  );
+}
+
+function WhatWeDo() {
+  const [openIdx, setOpenIdx] = useState<number | null>(null);
+  const COLS = 3;
+
+  function toggle(idx: number) {
+    setOpenIdx(prev => prev === idx ? null : idx);
+  }
+
+  return (
+    <section
+      id="hizmetler"
+      className="scroll-mt-20 bg-[#D6DEE8] py-24 md:py-32 px-6 md:px-12 lg:px-20"
+      style={{ backgroundImage: 'radial-gradient(ellipse 70% 20% at 50% 0%, rgba(92,141,255,0.052) 0%, transparent 100%)' }}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="reveal mb-16">
-          <p className="mb-3 text-[10px] font-medium tracking-[0.22em] text-[#3b7dbf] uppercase">
+          <p className="mb-3 text-[10px] font-medium tracking-[0.22em] text-[#5C8DFF] uppercase">
             Hizmetler
           </p>
-          <h2 className="mb-4 text-[1.8rem] md:text-[2.3rem] font-semibold leading-[1.14] tracking-[-0.02em] text-[#071426]">
+          <h2 className="mb-4 text-[1.8rem] md:text-[2.3rem] font-semibold leading-[1.14] tracking-[-0.02em] text-[#0F1B2D]">
             Ne Yapıyoruz?
           </h2>
-          <p className="text-[0.9rem] leading-[1.80] text-[#5F6B7A] max-w-[44rem]">
+          <p className="text-[0.9rem] leading-[1.80] text-[#526277] max-w-[44rem]">
             Markaların yalnızca görünür olmasını değil; doğru algılanmasını, güven üretmesini
             ve nitelikli müşteri talebi oluşturmasını sağlayan dijital yapılar kuruyoruz.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {SERVICES.map((svc, i) => (
-            <div
-              key={svc.num}
-              className="reveal group rounded-xl border border-[#e2e8ef] bg-white p-7 hover:border-[#3b7dbf]/35 hover:shadow-sm transition-all duration-300"
-              style={{ transitionDelay: `${i * 70}ms` }}
-            >
-              <div className="mb-5 h-[1.5px] w-7 bg-[#3b7dbf]/30 group-hover:w-12 group-hover:bg-[#3b7dbf]/60 transition-all duration-300" />
-              <p className="mb-1.5 text-[10px] font-medium tracking-[0.18em] text-[#3b7dbf] uppercase">
-                {svc.num}
-              </p>
-              <h3 className="mb-3 text-[0.9rem] font-semibold leading-[1.45] text-[#071426]">
-                {svc.title}
-              </h3>
-              <p className="text-[0.83rem] leading-[1.72] text-[#5F6B7A]">
-                {svc.desc}
-              </p>
-            </div>
-          ))}
+        <div className="space-y-5">
+          {[0, 1].map(rowIdx => {
+            const rowStart  = rowIdx * COLS;
+            const rowCards  = SERVICES.slice(rowStart, rowStart + COLS);
+            const rowActive = openIdx !== null && Math.floor(openIdx / COLS) === rowIdx;
+
+            return (
+              <div key={rowIdx}>
+
+                {/* Card row */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                  {rowCards.map((svc, i) => {
+                    const idx    = rowStart + i;
+                    const isOpen = openIdx === idx;
+
+                    return (
+                      <div key={svc.num}>
+
+                        {/* Card */}
+                        <div
+                          className="reveal"
+                          style={{ transitionDelay: `${idx * 70}ms` }}
+                        >
+                          <div
+                            role="button"
+                            tabIndex={0}
+                            aria-expanded={isOpen}
+                            onClick={() => toggle(idx)}
+                            onKeyDown={(e) => {
+                              if (e.key === 'Enter' || e.key === ' ') {
+                                e.preventDefault();
+                                toggle(idx);
+                              }
+                            }}
+                            onMouseMove={(e) => {
+                              const r = e.currentTarget.getBoundingClientRect();
+                              e.currentTarget.style.setProperty('--mx', `${((e.clientX - r.left) / r.width * 100).toFixed(1)}%`);
+                              e.currentTarget.style.setProperty('--my', `${((e.clientY - r.top) / r.height * 100).toFixed(1)}%`);
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.removeProperty('--mx');
+                              e.currentTarget.style.removeProperty('--my');
+                            }}
+                            className={[
+                              'group relative overflow-hidden rounded-xl border bg-[#E7EDF4] cursor-pointer select-none',
+                              'transition-[border-color,box-shadow,transform,background-color] duration-300 ease-out',
+                              'hover:-translate-y-1.5 hover:bg-[#EEF3F9]',
+                              'outline-none focus-visible:ring-2 focus-visible:ring-[#5C8DFF]/40 focus-visible:ring-offset-2',
+                              isOpen
+                                ? 'border-[#5C8DFF]/55 shadow-[0_4px_20px_rgba(92,141,255,0.13)]'
+                                : 'border-[#B8C6D8] hover:border-[#8FAAC8] hover:shadow-[0_6px_20px_rgba(92,141,255,0.11)]',
+                            ].join(' ')}
+                          >
+                            {/* Mouse-tracking radial glow */}
+                            <div
+                              className={[
+                                'absolute inset-0 pointer-events-none transition-opacity duration-300',
+                                isOpen ? 'opacity-100' : 'opacity-0 group-hover:opacity-100',
+                              ].join(' ')}
+                              style={{ background: 'radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(92,141,255,0.11) 0%, transparent 62%)' }}
+                            />
+
+                            <div className="relative p-7">
+                              {/* Accent line */}
+                              <div className={[
+                                'mb-5 h-[1.5px] transition-all duration-300',
+                                isOpen
+                                  ? 'w-12 bg-[#5C8DFF]/60'
+                                  : 'w-7 bg-[#5C8DFF]/35 group-hover:w-12 group-hover:bg-[#5C8DFF]/60',
+                              ].join(' ')} />
+
+                              {/* Number */}
+                              <p className={[
+                                'mb-1.5 text-[10px] font-medium tracking-[0.18em] uppercase transition-colors duration-300',
+                                isOpen ? 'text-[#5C8DFF]' : 'text-[#5C8DFF]/55 group-hover:text-[#5C8DFF]',
+                              ].join(' ')}>
+                                {svc.num}
+                              </p>
+
+                              {/* Title + chevron */}
+                              <div className="flex items-start justify-between gap-2 mb-3">
+                                <h3 className="text-[0.9rem] font-semibold leading-[1.45] text-[#0F1B2D]">
+                                  {svc.title}
+                                </h3>
+                                <svg
+                                  width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                  aria-hidden="true"
+                                  className={[
+                                    'mt-[3px] shrink-0 transition-all duration-300',
+                                    isOpen
+                                      ? 'rotate-180 text-[#5C8DFF]/70'
+                                      : 'text-[#5C8DFF]/40 group-hover:text-[#5C8DFF]/65 group-hover:translate-y-0.5',
+                                  ].join(' ')}
+                                >
+                                  <path d="M2 4.5l4.5 4.5 4.5-4.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                              </div>
+
+                              {/* Description */}
+                              <p className="text-[0.83rem] leading-[1.72] text-[#526277]">
+                                {svc.desc}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Mobile accordion panel — hidden on lg+ */}
+                        <div
+                          className="grid lg:hidden"
+                          style={{
+                            gridTemplateRows: isOpen ? '1fr' : '0fr',
+                            transition: 'grid-template-rows 300ms ease-out',
+                          }}
+                        >
+                          <div className="overflow-hidden min-h-0">
+                            <div className="pt-2.5">
+                              <div className="rounded-xl border border-[#B8C6D8] bg-white overflow-hidden shadow-[0_2px_16px_rgba(7,20,38,0.08)]">
+                                <div className="h-[2px] bg-gradient-to-r from-[#5C8DFF] to-[#38C7FF]" />
+                                <div className="px-6 py-7">
+                                  {isOpen && <ServiceDetailPanel key={idx} svc={svc} />}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* Desktop full-width row panel — hidden below lg */}
+                <div
+                  className="hidden lg:grid"
+                  style={{
+                    gridTemplateRows: rowActive ? '1fr' : '0fr',
+                    transition: 'grid-template-rows 300ms ease-out',
+                  }}
+                >
+                  <div className="overflow-hidden min-h-0">
+                    <div className="pt-3">
+                      {rowActive && openIdx !== null && (
+                        <div className="rounded-xl border border-[#B8C6D8] bg-white overflow-hidden shadow-[0_4px_22px_rgba(7,20,38,0.09)]">
+                          <div className="h-[2px] bg-gradient-to-r from-[#5C8DFF] to-[#38C7FF]" />
+                          <div className="px-8 py-8 lg:px-10 lg:py-9">
+                            <ServiceDetailPanel key={openIdx} svc={SERVICES[openIdx]} />
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -276,84 +591,100 @@ function WhatWeDo() {
 // ─── Nasıl Çalışıyoruz? ──────────────────────────────────────────────────────
 
 const BURST_PARTICLES = [
-  // Large anchor particles
-  { tx:  85, ty: -52, delay:   0, r: 9.0, color: '#245BFF' },
-  { tx: 145, ty: -18, delay:  28, r: 7.0, color: '#6EDCFF' },
-  { tx: 115, ty:  38, delay:  18, r: 8.0, color: '#1D4ED8' },
-  { tx:  62, ty:  72, delay:  55, r: 6.5, color: '#3B82F6' },
-  { tx: 175, ty: -48, delay:  42, r: 7.5, color: '#245BFF' },
-  { tx: 210, ty:  12, delay:  52, r: 6.0, color: '#6EDCFF' },
-  // Medium particles
-  { tx:  95, ty: -85, delay:  14, r: 5.0, color: '#93C5FD' },
-  { tx: 160, ty:  58, delay:  68, r: 4.5, color: '#1D4ED8' },
-  { tx:  48, ty: -68, delay:  38, r: 5.0, color: '#BFDBFE' },
-  { tx: 230, ty: -28, delay:  78, r: 4.5, color: '#245BFF' },
-  { tx: 135, ty:  80, delay:  32, r: 4.0, color: '#6EDCFF' },
-  { tx:  78, ty:  58, delay:  88, r: 4.5, color: '#3B82F6' },
-  { tx: 190, ty: -62, delay:  44, r: 4.0, color: '#93C5FD' },
-  { tx:  30, ty:  85, delay: 105, r: 3.5, color: '#6EDCFF' },
-  // Small fast particles
-  { tx: 105, ty: -42, delay:   8, r: 3.5, color: '#6EDCFF' },
-  { tx: 185, ty:  42, delay:  22, r: 3.5, color: '#245BFF' },
-  { tx:  58, ty: -95, delay:  48, r: 3.0, color: '#93C5FD' },
-  { tx: 250, ty:   6, delay:  62, r: 3.0, color: '#BFDBFE' },
-  { tx: 165, ty: -72, delay:  36, r: 3.0, color: '#1D4ED8' },
-  { tx: 200, ty: -38, delay:  72, r: 2.5, color: '#6EDCFF' },
-  { tx: 120, ty:  95, delay:  58, r: 2.5, color: '#3B82F6' },
-  { tx:  72, ty: -80, delay:  26, r: 2.5, color: '#BFDBFE' },
-  { tx: 260, ty: -12, delay:  82, r: 2.5, color: '#6EDCFF' },
-  { tx: 142, ty: -90, delay:  16, r: 2.0, color: '#93C5FD' },
+  // ── Ring 1 — inner core (r 10.5-12, radius ~75px) ─────
+  { tx:  75,  ty:   0,  delay:  0, r: 12.0, color: '#2563EB' },
+  { tx:  53,  ty: -53,  delay: 10, r: 11.5, color: '#6EDCFF' },
+  { tx:   0,  ty: -75,  delay:  6, r: 11.0, color: '#3B82F6' },
+  { tx: -53,  ty: -53,  delay: 14, r: 10.5, color: '#4F8FFF' },
+  { tx: -75,  ty:   0,  delay: 18, r: 10.5, color: '#2563EB' },
+  { tx: -53,  ty:  53,  delay: 22, r: 10.5, color: '#4F8FFF' },
+  { tx:   0,  ty:  75,  delay:  6, r: 11.0, color: '#3B82F6' },
+  { tx:  53,  ty:  53,  delay: 10, r: 11.5, color: '#6EDCFF' },
+  // ── Ring 2 — middle (r 6-7.5, radius ~115px) ──────────
+  { tx: 115,  ty:   0,  delay: 14, r:  7.5, color: '#93C5FD' },
+  { tx:  99,  ty: -57,  delay: 26, r:  7.0, color: '#6EDCFF' },
+  { tx:  57,  ty: -99,  delay: 18, r:  6.5, color: '#3B82F6' },
+  { tx:   0,  ty:-115,  delay: 30, r:  7.0, color: '#93C5FD' },
+  { tx: -57,  ty: -99,  delay: 22, r:  6.5, color: '#4F8FFF' },
+  { tx: -99,  ty: -57,  delay: 34, r:  6.0, color: '#6EDCFF' },
+  { tx:-115,  ty:   0,  delay: 26, r:  6.5, color: '#93C5FD' },
+  { tx: -99,  ty:  57,  delay: 38, r:  6.0, color: '#4F8FFF' },
+  { tx: -57,  ty:  99,  delay: 30, r:  6.5, color: '#3B82F6' },
+  { tx:   0,  ty: 115,  delay: 18, r:  7.0, color: '#93C5FD' },
+  { tx:  57,  ty:  99,  delay: 26, r:  7.5, color: '#6EDCFF' },
+  { tx:  99,  ty:  57,  delay: 14, r:  7.0, color: '#3B82F6' },
+  // ── Ring 3 — outer sparse (r 3.5-4.5, radius ~162px) ──
+  { tx: 150,  ty: -62,  delay: 36, r:  4.5, color: '#BFDBFE' },
+  { tx:  62,  ty:-150,  delay: 48, r:  4.0, color: '#93C5FD' },
+  { tx: -62,  ty:-150,  delay: 42, r:  4.0, color: '#BAE6FD' },
+  { tx:-150,  ty: -62,  delay: 56, r:  3.5, color: '#93C5FD' },
+  { tx:-150,  ty:  62,  delay: 52, r:  3.5, color: '#BAE6FD' },
+  { tx: -62,  ty: 150,  delay: 44, r:  4.0, color: '#93C5FD' },
+  { tx:  62,  ty: 150,  delay: 40, r:  4.0, color: '#BFDBFE' },
+  { tx: 150,  ty:  62,  delay: 32, r:  4.5, color: '#93C5FD' },
+  // ── Micro sparks ───────────────────────────────────────
+  { tx:  42,  ty:-138,  delay: 22, r:  2.2, color: '#E0F2FE' },
+  { tx:-108,  ty: -88,  delay: 34, r:  2.0, color: '#BFDBFE' },
+  { tx:-138,  ty:  42,  delay: 26, r:  1.8, color: '#93C5FD' },
+  { tx: -88,  ty: 108,  delay: 40, r:  2.0, color: '#BAE6FD' },
+  { tx:  42,  ty: 108,  delay: 30, r:  2.0, color: '#E0F2FE' },
+  { tx: 108,  ty:  88,  delay: 18, r:  2.2, color: '#BFDBFE' },
+  { tx:  88,  ty:-108,  delay: 38, r:  1.8, color: '#93C5FD' },
+  { tx: 145,  ty: -42,  delay: 14, r:  2.2, color: '#E0F2FE' },
 ];
 
 function BurstParticles({ x, y }: { x: number; y: number }) {
   return (
     <>
+      {/* Sustained energy core — "tamamlandı" glow that lingers */}
+      <div style={{
+        position: 'absolute', top: `${y}px`, left: `${x}px`,
+        width: '56px', height: '56px', borderRadius: '50%',
+        background: 'radial-gradient(circle, rgba(255,255,255,0.88) 0%, rgba(110,220,255,0.72) 28%, rgba(36,91,255,0.38) 62%, transparent 100%)',
+        boxShadow: '0 0 32px 14px rgba(110,220,255,0.55), 0 0 80px 32px rgba(36,91,255,0.30)',
+        animation: 'eek-energy-core 1.75s ease-out both',
+        pointerEvents: 'none',
+        zIndex: 5,
+      } as React.CSSProperties} />
+      {/* Ring flash — quick outer pop */}
+      <div style={{
+        position: 'absolute', top: `${y}px`, left: `${x}px`,
+        width: '30px', height: '30px', borderRadius: '50%',
+        background: 'radial-gradient(circle, rgba(220,240,255,0.95) 0%, rgba(110,220,255,0.60) 44%, transparent 74%)',
+        boxShadow: '0 0 22px 8px rgba(110,220,255,0.52), 0 0 52px 20px rgba(36,91,255,0.28)',
+        animation: 'eek-burst-flash 0.65s ease-out both',
+        pointerEvents: 'none',
+        zIndex: 5,
+      } as React.CSSProperties} />
       {BURST_PARTICLES.map((p, i) => (
-        <div
-          key={i}
-          style={{
-            position: 'absolute',
-            top: `${y}px`,
-            left: `${x}px`,
-            width: `${p.r * 2}px`,
-            height: `${p.r * 2}px`,
-            borderRadius: '50%',
-            background: p.color,
-            boxShadow: `0 0 ${Math.round(p.r * 2.5)}px ${Math.round(p.r * 1.2)}px ${p.color}99`,
-            ['--ptx' as string]: `${p.tx}px`,
-            ['--pty' as string]: `${p.ty}px`,
-            animation: `eek-particle-fly 1.55s ease-out ${p.delay}ms forwards`,
-            pointerEvents: 'none',
-          } as React.CSSProperties}
-        />
+        <div key={i} style={{
+          position: 'absolute', top: `${y}px`, left: `${x}px`,
+          width: `${p.r * 2}px`, height: `${p.r * 2}px`,
+          borderRadius: '50%', background: p.color,
+          boxShadow: `0 0 ${Math.round(p.r * 3.0)}px ${Math.round(p.r * 1.5)}px ${p.color}cc`,
+          ['--ptx' as string]: `${p.tx}px`,
+          ['--pty' as string]: `${p.ty}px`,
+          animation: `eek-particle-fly 1.85s ease-out ${p.delay}ms forwards`,
+          pointerEvents: 'none',
+        } as React.CSSProperties} />
       ))}
     </>
   );
 }
 
-function CargoBox({ rolling }: { rolling: boolean }) {
+function DigitalModule({ rolling }: { rolling: boolean }) {
   return (
     <div style={{
-      width: 22, height: 17, borderRadius: 3,
-      background: 'linear-gradient(150deg, #3B82F6 0%, #1D4ED8 100%)',
-      border: '1.5px solid #1a3ab8',
-      boxShadow: '0 2px 12px rgba(36,91,255,0.5), inset 0 1px 0 rgba(255,255,255,0.22)',
+      width: 30, height: 19, borderRadius: 5,
+      background: 'linear-gradient(135deg, rgba(92,141,255,0.97) 0%, rgba(29,78,216,0.97) 100%)',
+      border: '1px solid rgba(110,220,255,0.58)',
+      boxShadow: '0 0 14px rgba(92,141,255,0.68), 0 2px 10px rgba(36,91,255,0.50), inset 0 1px 0 rgba(255,255,255,0.28)',
       position: 'relative', overflow: 'hidden',
-      animation: rolling ? 'eek-cargo-roll 0.46s linear infinite' : 'none',
+      animation: rolling ? 'eek-cargo-roll 0.5s linear infinite' : 'none',
     }}>
-      <div style={{
-        position: 'absolute', top: 6, left: 0, right: 0,
-        height: 1.5, background: 'rgba(255,255,255,0.28)',
-      }} />
-      <div style={{
-        position: 'absolute', top: 0, bottom: 0, left: '40%', right: '40%',
-        background: 'rgba(255,255,255,0.14)',
-      }} />
-      <div style={{
-        position: 'absolute', top: 1, left: 2,
-        width: 7, height: 2, borderRadius: 1,
-        background: 'rgba(255,255,255,0.3)',
-      }} />
+      <div style={{ position: 'absolute', top: 4, left: 4, right: 4, height: 1, background: 'rgba(255,255,255,0.44)', borderRadius: 1 }} />
+      <div style={{ position: 'absolute', bottom: 4, left: 6, right: 6, height: 1, background: 'rgba(110,220,255,0.40)', borderRadius: 1 }} />
+      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: 4, height: 4, borderRadius: '50%', background: 'rgba(255,255,255,0.82)' }} />
     </div>
   );
 }
@@ -363,6 +694,7 @@ const WAVE_AMP = 11;
 const WAVE_CYCLES = 2.5;
 const CONV_MS  = 820;  // 02→03 conveyor travel
 const ROLL_MS  = 820;  // 03→04 rolling travel
+const FINAL_MS = 660;  // 04→end terminal dash (slightly faster, more energetic)
 
 function makeWavePath(x0: number, x1: number, cy: number, amp: number, cycles: number): string {
   if (x1 <= x0) return `M ${x0} ${cy}`;
@@ -435,36 +767,40 @@ function HowWeWork() {
     t += 460;
     after(() => { setPulsing(-1); setCargoAt(1); }, t);
 
-    // Cargo departs toward 03 (steady conveyor, no rolling)
+    // Cargo departs 02 — line starts filling toward 03 simultaneously
     t += 280;
-    after(() => { setCargoAt(2); }, t);
+    after(() => { setCargoAt(2); setReachedStep(2); }, t);
 
-    // Cargo arrives at 03
+    // Cargo arrives at 03 — pulse confirms
     t += CONV_MS;
-    after(() => { setReachedStep(2); setPulsing(2); }, t);
+    after(() => { setPulsing(2); }, t);
 
-    // Rolling departure toward 04
+    // Rolling departure 03→04: cargo and line fill start together
     t += 480;
-    after(() => { setPulsing(-1); setCargoAt(3); setIsRolling(true); }, t);
+    after(() => { setPulsing(-1); setCargoAt(3); setIsRolling(true); setReachedStep(3); }, t);
 
-    // Cargo arrives at 04
+    // Cargo arrives at 04 — pulse confirms
     t += ROLL_MS;
-    after(() => { setReachedStep(3); setPulsing(3); setIsRolling(false); }, t);
+    after(() => { setPulsing(3); setIsRolling(false); }, t);
 
-    // Exits to end with a roll
+    // Exits toward end — fast terminal dash
     t += 520;
     after(() => { setPulsing(-1); setCargoAt(4); setIsRolling(true); }, t);
 
-    // Particle burst
-    t += 580;
+    // Cargo arrives at endX — stop rolling
+    t += FINAL_MS;
+    after(() => { setIsRolling(false); }, t);
+
+    // Ring visible briefly → burst fires
+    t += 180;
     after(() => { setShowParticles(true); }, t);
 
-    // Particles done
-    t += 1900;
-    after(() => { setShowParticles(false); setIsRolling(false); }, t);
+    // Particles done — 1.85s animation + 56ms max delay + margin
+    t += 2200;
+    after(() => { setShowParticles(false); }, t);
 
     // Loop
-    after(runSequence, t + 2000);
+    after(runSequence, t + 1800);
   }
 
   useEffect(() => {
@@ -499,14 +835,18 @@ function HowWeWork() {
     : cargoAt === 3   ? stepXs[3]   // traveling to / at node 04
     :                   endX;
 
-  const cargoTrans = cargoAt >= 0
+  const cargoTrans = cargoAt === 4
+    ? `left ${FINAL_MS}ms cubic-bezier(0.22,0,0.28,1), opacity 0.28s ease`
+    : cargoAt >= 0
     ? `left ${CONV_MS}ms cubic-bezier(0.4,0,0.2,1), opacity 0.32s ease`
     : 'opacity 0.12s ease';
 
-  // Active straight-line fill for the 02→04 segment
+  // Active straight-line fill — 02→04, then extends to endX when cargo exits
   const activeLineX = stepXs[1] ?? 0;
   const activeLineW = reachedStep >= 1 && stepXs.length === 4
-    ? Math.max(0, (stepXs[Math.min(reachedStep, 3)] ?? activeLineX) - activeLineX)
+    ? cargoAt === 4
+      ? endX - activeLineX
+      : Math.max(0, (stepXs[Math.min(reachedStep, 3)] ?? activeLineX) - activeLineX)
     : 0;
 
   const wavePath = stepXs.length >= 2
@@ -522,13 +862,13 @@ function HowWeWork() {
     >
       <div className="max-w-7xl mx-auto">
         <div className="reveal mb-16">
-          <p className="mb-3 text-[10px] font-medium tracking-[0.22em] text-[#3b7dbf] uppercase">
+          <p className="mb-3 text-[10px] font-medium tracking-[0.22em] text-[#2F6BFF] uppercase">
             Çalışma Modeli
           </p>
-          <h2 className="mb-4 text-[1.8rem] md:text-[2.3rem] font-semibold leading-[1.14] tracking-[-0.02em] text-[#071426]">
+          <h2 className="mb-4 text-[1.8rem] md:text-[2.3rem] font-semibold leading-[1.14] tracking-[-0.02em] text-[#0F1B2D]">
             Nasıl Çalışıyoruz?
           </h2>
-          <p className="text-[0.9rem] leading-[1.80] text-[#5F6B7A] max-w-[44rem]">
+          <p className="text-[0.9rem] leading-[1.80] text-[#526277] max-w-[44rem]">
             Her markaya aynı paketi sunmak yerine, mevcut durumu analiz eden ve sistemi
             markanın hedeflerine göre kuran kontrollü bir çalışma modeli izliyoruz.
           </p>
@@ -606,7 +946,7 @@ function HowWeWork() {
                     />
                   )}
 
-                  {/* Active fill — 02→04 straight segment */}
+                  {/* Active fill — 02→04, then extends to endX when cargo exits */}
                   {reachedStep >= 1 && (
                     <rect
                       x={activeLineX}
@@ -616,13 +956,15 @@ function HowWeWork() {
                       fill="url(#eek-active-grad)"
                       style={{
                         width: `${activeLineW}px`,
-                        transition: 'width 0.78s cubic-bezier(0.4,0,0.2,1)',
+                        transition: cargoAt === 4
+                          ? `width ${FINAL_MS}ms cubic-bezier(0.22,0,0.28,1) 35ms`
+                          : `width ${CONV_MS}ms cubic-bezier(0.4,0,0.2,1) 35ms`,
                       }}
                     />
                   )}
 
                   {/* Glow dot at current step circle */}
-                  {reachedStep >= 0 && (
+                  {reachedStep >= 0 && cargoAt < 4 && (
                     <circle
                       cx={stepXs[reachedStep] ?? stepXs[0]}
                       cy={SVG_CY}
@@ -631,9 +973,10 @@ function HowWeWork() {
                       style={{ filter: 'drop-shadow(0 0 5px rgba(110,220,255,0.9))' }}
                     />
                   )}
+
                 </svg>
 
-                {/* Cargo package */}
+                {/* Cargo package + terminal ring */}
                 <div
                   style={{
                     position: 'absolute',
@@ -644,8 +987,26 @@ function HowWeWork() {
                     zIndex: 4,
                   }}
                 >
-                  <div style={{ transform: 'translate(-50%, -50%)' }}>
-                    <CargoBox rolling={isRolling} />
+                  <div style={{ position: 'relative', transform: 'translate(-50%, -50%)' }}>
+                    {/* Target ring — appears when cargo arrives, centered on cargo */}
+                    {cargoAt === 4 && !isRolling && !showParticles && (
+                      <div
+                        aria-hidden
+                        style={{
+                          position: 'absolute',
+                          top: '50%', left: '50%',
+                          transform: 'translate(-50%, -50%)',
+                          width: '44px', height: '44px', borderRadius: '50%',
+                          border: '1.5px solid rgba(110,220,255,0.75)',
+                          boxShadow: '0 0 14px rgba(110,220,255,0.50), 0 0 28px rgba(36,91,255,0.26)',
+                          background: 'radial-gradient(circle, rgba(110,220,255,0.09) 0%, transparent 68%)',
+                          animation: 'eek-ring-in 0.30s ease-out both',
+                          pointerEvents: 'none',
+                          zIndex: 3,
+                        }}
+                      />
+                    )}
+                    <DigitalModule rolling={isRolling} />
                   </div>
                 </div>
 
@@ -707,10 +1068,10 @@ function HowWeWork() {
                   </div>
                 </div>
 
-                <h3 className="mb-3 text-[0.9rem] font-semibold text-[#071426]">
+                <h3 className="mb-3 text-[0.9rem] font-semibold text-[#0F1B2D]">
                   {stepData.title}
                 </h3>
-                <p className="text-[0.83rem] leading-[1.72] text-[#5F6B7A]">
+                <p className="text-[0.83rem] leading-[1.72] text-[#526277]">
                   {stepData.desc}
                 </p>
               </div>
@@ -726,45 +1087,45 @@ function HowWeWork() {
 
 function WhoWeWorkWith() {
   return (
-    <section id="uygunluk" className="scroll-mt-20 bg-[#F5F2EC] py-24 md:py-32 px-6 md:px-12 lg:px-20">
+    <section id="uygunluk" className="scroll-mt-20 bg-[#F5F7FA] py-24 md:py-32 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="reveal mb-14">
-          <p className="mb-3 text-[10px] font-medium tracking-[0.22em] text-[#3b7dbf] uppercase">
+          <p className="mb-3 text-[10px] font-medium tracking-[0.22em] text-[#2F6BFF] uppercase">
             Yaklaşımımız
           </p>
-          <h2 className="mb-4 text-[1.8rem] md:text-[2.3rem] font-semibold leading-[1.14] tracking-[-0.02em] text-[#071426] max-w-[38rem]">
+          <h2 className="mb-4 text-[1.8rem] md:text-[2.3rem] font-semibold leading-[1.14] tracking-[-0.02em] text-[#0F1B2D] max-w-[38rem]">
             Doğru Yapıyı Birlikte Kurarız
           </h2>
-          <p className="text-[0.9rem] leading-[1.80] text-[#5F6B7A] max-w-[44rem]">
+          <p className="text-[0.9rem] leading-[1.80] text-[#526277] max-w-[44rem]">
             Her markanın ihtiyacı aynı değildir. Bu yüzden önce markanın mevcut durumunu,
             hedeflerini ve dijitalde hangi noktada güçlenmesi gerektiğini anlarız.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-5">
-          <div className="reveal rounded-xl border border-[#3b7dbf]/22 bg-white p-8 md:p-10">
+          <div className="reveal group rounded-xl border border-[#2F6BFF]/22 bg-white p-8 md:p-10 transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1.5 hover:border-[#2F6BFF]/40 hover:shadow-[0_8px_28px_rgba(47,107,255,0.10)]">
             <div className="mb-7 flex items-center gap-3">
-              <div className="w-[3px] h-5 rounded-full bg-[#3b7dbf]/55" />
-              <h3 className="text-[0.78rem] font-semibold tracking-[0.18em] text-[#3b7dbf] uppercase">
+              <div className="w-[3px] h-5 rounded-full bg-[#2F6BFF]/55 transition-all duration-300 group-hover:h-7 group-hover:bg-[#2F6BFF] group-hover:shadow-[0_0_8px_rgba(47,107,255,0.45)]" />
+              <h3 className="text-[0.78rem] font-semibold tracking-[0.18em] text-[#2F6BFF] uppercase">
                 Önce Anlarız
               </h3>
             </div>
             <ul className="space-y-4">
               {APPROACH_LEFT.map(item => (
                 <li key={item} className="flex items-start gap-3.5">
-                  <span className="mt-[7px] w-[5px] h-[5px] shrink-0 rounded-full bg-[#3b7dbf]/40" />
-                  <span className="text-[0.875rem] leading-[1.70] text-[#5F6B7A]">{item}</span>
+                  <span className="mt-[7px] w-[5px] h-[5px] shrink-0 rounded-full bg-[#2F6BFF]/40 transition-colors duration-200 group-hover:bg-[#2F6BFF]/65" />
+                  <span className="text-[0.875rem] leading-[1.70] text-[#526277] transition-transform duration-200 group-hover:translate-x-[2px]">{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
           <div
-            className="reveal rounded-xl border border-[#d1d9e0] bg-white p-8 md:p-10"
+            className="reveal group rounded-xl border border-[#d1d9e0] bg-white p-8 md:p-10 transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1.5 hover:border-[#5C8DFF]/28 hover:shadow-[0_8px_28px_rgba(47,107,255,0.08)]"
             style={{ transitionDelay: '90ms' }}
           >
             <div className="mb-7 flex items-center gap-3">
-              <div className="w-[3px] h-5 rounded-full bg-[#4B5563]/40" />
+              <div className="w-[3px] h-5 rounded-full bg-[#4B5563]/40 transition-all duration-300 group-hover:h-7 group-hover:bg-[#5C8DFF]/65" />
               <h3 className="text-[0.78rem] font-semibold tracking-[0.18em] text-[#4B5563] uppercase">
                 Sonra Yapıyı Kurarız
               </h3>
@@ -772,8 +1133,8 @@ function WhoWeWorkWith() {
             <ul className="space-y-4">
               {APPROACH_RIGHT.map(item => (
                 <li key={item} className="flex items-start gap-3.5">
-                  <span className="mt-[7px] w-[5px] h-[5px] shrink-0 rounded-full bg-[#4B5563]/30" />
-                  <span className="text-[0.875rem] leading-[1.70] text-[#5F6B7A]">{item}</span>
+                  <span className="mt-[7px] w-[5px] h-[5px] shrink-0 rounded-full bg-[#4B5563]/30 transition-colors duration-200 group-hover:bg-[#5C8DFF]/45" />
+                  <span className="text-[0.875rem] leading-[1.70] text-[#526277] transition-transform duration-200 group-hover:translate-x-[2px]">{item}</span>
                 </li>
               ))}
             </ul>
@@ -788,16 +1149,16 @@ function WhoWeWorkWith() {
 
 function Projects() {
   return (
-    <section id="projeler" className="scroll-mt-20 bg-[#F7F8FA] py-24 md:py-32 px-6 md:px-12 lg:px-20">
+    <section id="projeler" className="scroll-mt-20 bg-[#F7F9FC] py-24 md:py-32 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="reveal mb-16">
-          <p className="mb-3 text-[10px] font-medium tracking-[0.22em] text-[#3b7dbf] uppercase">
+          <p className="mb-3 text-[10px] font-medium tracking-[0.22em] text-[#2F6BFF] uppercase">
             Projeler
           </p>
-          <h2 className="mb-4 text-[1.8rem] md:text-[2.3rem] font-semibold leading-[1.14] tracking-[-0.02em] text-[#071426]">
+          <h2 className="mb-4 text-[1.8rem] md:text-[2.3rem] font-semibold leading-[1.14] tracking-[-0.02em] text-[#0F1B2D]">
             Kurulan Sistemler
           </h2>
-          <p className="text-[0.9rem] leading-[1.80] text-[#5F6B7A] max-w-[44rem]">
+          <p className="text-[0.9rem] leading-[1.80] text-[#526277] max-w-[44rem]">
             Her çalışma; markanın algısını, reklam performansını, içerik yapısını ve talep
             takip sürecini birlikte ele alan bir sistem olarak tasarlanır.
           </p>
@@ -807,23 +1168,39 @@ function Projects() {
           {PROJECTS.map((project, i) => (
             <div
               key={i}
-              className="reveal group flex flex-col rounded-xl border border-[#e2e8ef] bg-white p-7 hover:border-[#3b7dbf]/35 hover:shadow-sm transition-all duration-300"
+              className="reveal group relative flex flex-col rounded-xl border border-[#e2e8ef] bg-white p-7 hover:border-[#2F6BFF]/35 hover:shadow-[0_8px_28px_rgba(47,107,255,0.09)] hover:-translate-y-1.5 transition-all duration-300"
               style={{ transitionDelay: `${i * 80}ms` }}
+              onMouseMove={(e) => {
+                const r = e.currentTarget.getBoundingClientRect();
+                e.currentTarget.style.setProperty('--mx', `${((e.clientX - r.left) / r.width * 100).toFixed(1)}%`);
+                e.currentTarget.style.setProperty('--my', `${((e.clientY - r.top) / r.height * 100).toFixed(1)}%`);
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.removeProperty('--mx');
+                e.currentTarget.style.removeProperty('--my');
+              }}
             >
-              <div className="mb-7 h-px w-full bg-[#e2e8ef] group-hover:bg-[#3b7dbf]/30 transition-colors duration-500" />
-              <div className="flex-1">
-                <h3 className="mb-3 text-[0.9rem] font-semibold leading-[1.50] text-[#071426]">
+              {/* Mouse glow */}
+              <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"
+                style={{ background: 'radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(47,107,255,0.06) 0%, transparent 65%)' }} />
+              {/* Gradient top bar */}
+              <div className="relative mb-7 h-[1.5px] w-full overflow-hidden rounded-full">
+                <div className="absolute inset-0 bg-[#e2e8ef]" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#5C8DFF] to-[#38C7FF] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              </div>
+              <div className="relative flex-1">
+                <h3 className="mb-3 text-[0.9rem] font-semibold leading-[1.50] text-[#0F1B2D]">
                   {project.title}
                 </h3>
-                <p className="text-[0.83rem] leading-[1.72] text-[#5F6B7A]">
+                <p className="text-[0.83rem] leading-[1.72] text-[#526277]">
                   {project.desc}
                 </p>
               </div>
-              <div className="mt-7 flex flex-wrap gap-2">
+              <div className="relative mt-7 flex flex-wrap gap-2">
                 {project.tags.map(tag => (
                   <span
                     key={tag}
-                    className="text-[9.5px] tracking-[0.08em] text-[#3b7dbf] border border-[#3b7dbf]/25 px-2.5 py-[3px] rounded-full"
+                    className="text-[9.5px] tracking-[0.08em] text-[#2F6BFF] border border-[#2F6BFF]/25 px-2.5 py-[3px] rounded-full group-hover:border-[#2F6BFF]/45 group-hover:bg-[#2F6BFF]/[0.04] transition-colors duration-300"
                   >
                     {tag}
                   </span>
@@ -844,19 +1221,19 @@ function References() {
   const row2 = REFERENCES.slice(4);
 
   return (
-    <section id="referanslar" className="scroll-mt-20 bg-[#F5F2EC] py-20 md:py-28 px-6 md:px-12 lg:px-20">
+    <section id="referanslar" className="scroll-mt-20 bg-[#EEF3F8] py-20 md:py-28 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
 
         {/* Header: left title + right trust note */}
         <div className="reveal mb-10 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
           <div>
-            <p className="mb-3 text-[10px] font-medium tracking-[0.22em] text-[#3b7dbf] uppercase">
+            <p className="mb-3 text-[10px] font-medium tracking-[0.22em] text-[#2F6BFF] uppercase">
               Referanslar
             </p>
-            <h2 className="mb-4 text-[1.8rem] md:text-[2.3rem] font-semibold leading-[1.14] tracking-[-0.02em] text-[#071426]">
+            <h2 className="mb-4 text-[1.8rem] md:text-[2.3rem] font-semibold leading-[1.14] tracking-[-0.02em] text-[#0F1B2D]">
               Birlikte Çalıştığımız Markalar
             </h2>
-            <p className="text-[0.9rem] leading-[1.80] text-[#5F6B7A] max-w-[40rem]">
+            <p className="text-[0.9rem] leading-[1.80] text-[#526277] max-w-[40rem]">
               Farklı sektörlerde, farklı ihtiyaçlarla çalışıyoruz. Ortak nokta; daha düzenli,
               daha güven veren ve daha ölçülebilir bir dijital yapı kurmak.
             </p>
@@ -879,12 +1256,14 @@ function References() {
             {row1.map((ref) => (
               <div
                 key={ref.name}
-                className="flex items-center justify-center h-[110px] px-8 hover:bg-[#f5f7fa] transition-colors duration-300"
+                className="group relative flex items-center justify-center h-[110px] px-8 hover:bg-[#f0f4f8] transition-colors duration-300 overflow-hidden"
               >
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                  style={{ background: 'radial-gradient(circle at 50% 50%, rgba(92,141,255,0.08) 0%, transparent 70%)' }} />
                 <img
                   src={ref.logo}
                   alt={ref.name}
-                  className="max-h-[60px] max-w-[150px] w-auto object-contain transition-transform duration-300 ease-out hover:scale-[1.18]"
+                  className="relative max-h-[60px] max-w-[150px] w-auto object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 ease-out group-hover:scale-[1.07]"
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                 />
               </div>
@@ -899,12 +1278,14 @@ function References() {
             {row2.map((ref) => (
               <div
                 key={ref.name}
-                className="flex items-center justify-center h-[110px] px-8 w-1/4 hover:bg-[#f5f7fa] transition-colors duration-300"
+                className="group relative flex items-center justify-center h-[110px] px-8 w-1/4 hover:bg-[#f0f4f8] transition-colors duration-300 overflow-hidden"
               >
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                  style={{ background: 'radial-gradient(circle at 50% 50%, rgba(92,141,255,0.08) 0%, transparent 70%)' }} />
                 <img
                   src={ref.logo}
                   alt={ref.name}
-                  className="max-h-[60px] max-w-[150px] w-auto object-contain transition-transform duration-300 ease-out hover:scale-[1.18]"
+                  className="relative max-h-[60px] max-w-[150px] w-auto object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 ease-out group-hover:scale-[1.07]"
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                 />
               </div>
@@ -969,13 +1350,13 @@ function Contact() {
     <section id="basvuru" className="scroll-mt-20 bg-[#EEF3F8] py-24 md:py-32 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="reveal mb-14">
-          <p className="mb-3 text-[10px] font-medium tracking-[0.22em] text-[#3b7dbf] uppercase">
+          <p className="mb-3 text-[10px] font-medium tracking-[0.22em] text-[#2F6BFF] uppercase">
             İletişim
           </p>
-          <h2 className="mb-4 text-[1.8rem] md:text-[2.3rem] font-semibold leading-[1.14] tracking-[-0.02em] text-[#071426] max-w-[36rem]">
+          <h2 className="mb-4 text-[1.8rem] md:text-[2.3rem] font-semibold leading-[1.14] tracking-[-0.02em] text-[#0F1B2D] max-w-[36rem]">
             Markanızın Geleceğini Konuşalım
           </h2>
-          <p className="text-[0.9rem] leading-[1.80] text-[#5F6B7A] max-w-[44rem]">
+          <p className="text-[0.9rem] leading-[1.80] text-[#526277] max-w-[44rem]">
             Markanızın mevcut dijital yapısını, hedeflerini ve büyüme ihtiyaçlarını birlikte
             değerlendirelim. Size en doğru web, reklam, funnel ve lead takip yapısını konuşalım.
           </p>
@@ -993,14 +1374,14 @@ function Contact() {
                   <path d="M1 6l4.5 4.5L15 1" stroke="#059669" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <p className="text-[0.9rem] text-[#5F6B7A] leading-[1.80] max-w-[22rem]">
+              <p className="text-[0.9rem] text-[#526277] leading-[1.80] max-w-[22rem]">
                 Talebiniz alındı. En kısa sürede görüşme için geri döneceğiz.
               </p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="grid sm:grid-cols-2 gap-4">
               <div>
-                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#5F6B7A] uppercase">
+                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#526277] uppercase">
                   Ad Soyad
                 </label>
                 <input type="text" name="name" value={fields.name} onChange={handleChange}
@@ -1008,7 +1389,7 @@ function Contact() {
               </div>
 
               <div>
-                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#5F6B7A] uppercase">
+                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#526277] uppercase">
                   Marka / İşletme Adı
                 </label>
                 <input type="text" name="brand" value={fields.brand} onChange={handleChange}
@@ -1016,7 +1397,7 @@ function Contact() {
               </div>
 
               <div>
-                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#5F6B7A] uppercase">
+                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#526277] uppercase">
                   Web Sitesi veya Instagram
                 </label>
                 <input type="text" name="website" value={fields.website} onChange={handleChange}
@@ -1024,7 +1405,7 @@ function Contact() {
               </div>
 
               <div>
-                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#5F6B7A] uppercase">
+                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#526277] uppercase">
                   Sektör
                 </label>
                 <input type="text" name="sector" value={fields.sector} onChange={handleChange}
@@ -1032,7 +1413,7 @@ function Contact() {
               </div>
 
               <div className="sm:col-span-2">
-                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#5F6B7A] uppercase">
+                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#526277] uppercase">
                   Şu an en büyük ihtiyacınız nedir?
                 </label>
                 <div className="relative">
@@ -1050,7 +1431,7 @@ function Contact() {
               </div>
 
               <div className="sm:col-span-2">
-                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#5F6B7A] uppercase">
+                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#526277] uppercase">
                   Aylık pazarlama bütçesi aralığı
                 </label>
                 <div className="relative">
@@ -1068,7 +1449,7 @@ function Contact() {
               </div>
 
               <div className="sm:col-span-2">
-                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#5F6B7A] uppercase">
+                <label className="mb-1.5 block text-[10px] font-medium tracking-[0.12em] text-[#526277] uppercase">
                   Mesaj
                 </label>
                 <textarea name="message" value={fields.message} onChange={handleChange} rows={4}
@@ -1079,7 +1460,8 @@ function Contact() {
               <div className="sm:col-span-2 pt-1">
                 <button
                   type="submit"
-                  className="rounded-full bg-[#071426] px-8 py-3.5 text-[0.82rem] font-semibold tracking-[0.04em] text-white transition-all duration-300 hover:bg-[#0d1f3c] hover:shadow-md active:scale-[0.98] cursor-pointer"
+                  className="rounded-full bg-[#23324A] px-8 py-3.5 text-[0.82rem] font-semibold tracking-[0.04em] text-white transition-all duration-300 hover:bg-[#2a3d5a] hover:shadow-[0_4px_20px_rgba(35,50,74,0.40)] hover:scale-[1.01] active:scale-[0.98] cursor-pointer"
+                  style={{ boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.07)' }}
                 >
                   Görüşme Talebi Gönder
                 </button>
@@ -1089,16 +1471,20 @@ function Contact() {
 
           {/* Sidebar */}
           <div className="rounded-xl border border-[#e2e8ef] bg-white p-7 h-fit">
-            <h3 className="mb-6 text-[0.82rem] font-semibold text-[#071426]">
+            <h3 className="mb-6 text-[0.82rem] font-semibold text-[#0F1B2D]">
               Süreç Nasıl İlerler?
             </h3>
-            <div className="space-y-5">
+            <div className="space-y-0">
               {PROCESS_STEPS.map((step, i) => (
-                <div key={i} className="flex gap-3.5">
-                  <span className="mt-0.5 w-3.5 shrink-0 text-[10px] font-medium text-[#3b7dbf]">
-                    {i + 1}.
+                <div key={i} className="relative flex gap-3.5 pb-5 last:pb-0">
+                  {/* Connector line */}
+                  {i < PROCESS_STEPS.length - 1 && (
+                    <div className="absolute left-[9px] top-[22px] w-px h-[calc(100%-10px)] bg-[#2F6BFF]/12" />
+                  )}
+                  <span className="mt-0.5 flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full border border-[#2F6BFF]/28 bg-[#2F6BFF]/[0.07] text-[9px] font-semibold text-[#2F6BFF]">
+                    {i + 1}
                   </span>
-                  <p className="text-[0.83rem] leading-[1.70] text-[#5F6B7A]">{step}</p>
+                  <p className="text-[0.83rem] leading-[1.70] text-[#526277]">{step}</p>
                 </div>
               ))}
             </div>
@@ -1113,33 +1499,43 @@ function Contact() {
 
 function Footer() {
   return (
-    <footer className="border-t border-white/[0.05] bg-[#040810] px-6 py-16 md:px-12 lg:px-20">
+    <footer className="relative bg-[#050B18] px-6 py-16 md:px-12 lg:px-20">
+      {/* Gradient top line */}
+      <div
+        className="absolute top-0 left-0 right-0 h-px"
+        style={{ background: 'linear-gradient(90deg, transparent 0%, #5C8DFF 35%, #15D372 65%, transparent 100%)' }}
+      />
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10 mb-12">
           <div className="max-w-[22rem]">
-            <a href="#" className="block mb-4 text-[0.92rem] font-semibold tracking-widest text-white/80 uppercase">
+            <a href="#" className="block mb-3 text-[0.92rem] font-semibold tracking-widest text-white/85 uppercase">
               EEK Media
             </a>
-            <p className="text-[0.875rem] leading-[1.75] text-white/35">
-              Marka, reklam, funnel, web ve lead takip sistemlerini birlikte ele alan
-              stratejik dijital pazarlama stüdyosu.
+            <p className="text-[0.8rem] leading-[1.75] text-white/32 tracking-wide">
+              Strateji, algı ve dijital sistemler için tasarlandı.
             </p>
           </div>
 
           <nav className="flex flex-wrap gap-x-8 gap-y-3">
             {NAV_LINKS.map(l => (
               <a key={l.href} href={l.href}
-                 className="text-[0.875rem] text-white/38 hover:text-white/72 transition-colors duration-200">
+                 className="relative text-[0.875rem] text-white/36 hover:text-white/70 transition-colors duration-200 after:absolute after:bottom-[-2px] after:left-0 after:h-px after:w-0 after:bg-white/30 hover:after:w-full after:transition-all after:duration-300">
                 {l.label}
               </a>
             ))}
           </nav>
         </div>
 
-        <div className="border-t border-white/[0.04] pt-8">
-          <p className="text-[11px] text-white/20 tracking-wide">
+        <div className="border-t border-white/[0.04] pt-8 flex items-center justify-between gap-4">
+          <p className="text-[11px] text-white/18 tracking-wide">
             © 2026 EEK Media. Tüm hakları saklıdır.
           </p>
+          <a
+            href="/by-eek"
+            className="text-[10px] tracking-[0.18em] text-white/16 hover:text-white/38 transition-colors duration-300 uppercase shrink-0"
+          >
+            by EEK
+          </a>
         </div>
       </div>
     </footer>
@@ -1171,6 +1567,13 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <div
+          aria-hidden
+          className="h-px"
+          style={{
+            background: 'linear-gradient(90deg, transparent 0%, rgba(92,141,255,0.35) 35%, rgba(125,220,255,0.45) 50%, rgba(92,141,255,0.35) 65%, transparent 100%)',
+          }}
+        />
         <WhatWeDo />
         <HowWeWork />
         <WhoWeWorkWith />

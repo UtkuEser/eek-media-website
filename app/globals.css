@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --eek-navy: #0a1628;
-  --eek-navy-mid: #0d1f3c;
+  --eek-navy: #081225;
+  --eek-navy-mid: #10203A;
+  --eek-navy-footer: #050B18;
   --eek-blue: #1a3a6e;
   --eek-blue-light: #2a5298;
-  --eek-accent: #5b9bd5;
+  --eek-accent: #2F6BFF;
+  --eek-accent-cyan: #38C7FF;
   --eek-white: #f0f2f5;
-  --eek-gold: #b8922a;
   --background: var(--eek-navy);
   --foreground: var(--eek-white);
 }
@@ -52,7 +53,7 @@ html {
 /* Form select options — light theme form */
 select option {
   background: #ffffff;
-  color: #071426;
+  color: #0F1B2D;
 }
 
 /* Process section animations */
@@ -65,9 +66,27 @@ select option {
   50%       { opacity: 0.72; }
 }
 @keyframes eek-particle-fly {
-  0%   { opacity: 0.8;  transform: translate(-50%, -50%) scale(1); }
-  70%  { opacity: 0.2;  }
-  100% { opacity: 0;    transform: translate(calc(-50% + var(--ptx)), calc(-50% + var(--pty))) scale(0.15); }
+  0%   { opacity: 0.95; transform: translate(-50%, -50%) scale(1.1); }
+  45%  { opacity: 0.82; }
+  78%  { opacity: 0.22; }
+  100% { opacity: 0;    transform: translate(calc(-50% + var(--ptx)), calc(-50% + var(--pty))) scale(0.08); }
+}
+@keyframes eek-burst-flash {
+  0%   { opacity: 0;   transform: translate(-50%, -50%) scale(0.2);  }
+  16%  { opacity: 1;   transform: translate(-50%, -50%) scale(1.08); }
+  52%  { opacity: 0.5; transform: translate(-50%, -50%) scale(1.42); }
+  100% { opacity: 0;   transform: translate(-50%, -50%) scale(2.5);  }
+}
+@keyframes eek-energy-core {
+  0%   { opacity: 0;    transform: translate(-50%, -50%) scale(0.12); }
+  10%  { opacity: 1;    transform: translate(-50%, -50%) scale(1.02); }
+  42%  { opacity: 0.92; transform: translate(-50%, -50%) scale(1.0);  }
+  68%  { opacity: 0.45; transform: translate(-50%, -50%) scale(1.15); }
+  100% { opacity: 0;    transform: translate(-50%, -50%) scale(1.45); }
+}
+@keyframes eek-ring-in {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(1.55); }
+  to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 }
 @keyframes eek-pulse-ring {
   0%   { transform: translate(-50%, -50%) scale(1);   opacity: 0.7; }
@@ -85,6 +104,31 @@ select option {
 @keyframes eek-cargo-roll {
   0%   { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@keyframes eek-hero-in {
+  from { opacity: 0; filter: blur(5px); transform: translateY(12px); }
+  to   { opacity: 1; filter: blur(0);   transform: translateY(0); }
+}
+@keyframes eek-panel-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes eek-item-in {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* /by-eek signature page — ambient glow drift */
+@keyframes eek-sig-glow-1 {
+  0%, 100% { transform: translate(0px,   0px)  scale(1);    opacity: 0.75; }
+  30%       { transform: translate(-55px, 38px) scale(1.07); opacity: 0.52; }
+  65%       { transform: translate(38px, -28px) scale(0.94); opacity: 0.82; }
+}
+@keyframes eek-sig-glow-2 {
+  0%, 100% { transform: translate(0px,   0px)  scale(1);    opacity: 0.65; }
+  38%       { transform: translate(48px, -46px) scale(1.09); opacity: 0.42; }
+  72%       { transform: translate(-28px, 32px) scale(0.92); opacity: 0.72; }
 }
 
 @media (prefers-reduced-motion: reduce) {
