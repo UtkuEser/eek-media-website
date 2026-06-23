@@ -1319,9 +1319,7 @@ function References() {
                   <img
                     src={ref.logo}
                     alt={ref.name}
-                    width={90}
-                    height={36}
-                    className="max-h-[36px] max-w-[90px] w-auto object-contain"
+                    className="max-h-[40px] max-w-[100px] w-auto h-auto object-contain"
                     loading="lazy"
                     onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                   />
