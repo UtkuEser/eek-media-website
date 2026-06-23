@@ -156,13 +156,13 @@ const BUDGET_OPTIONS = [
 ];
 
 const REFERENCES = [
-  { name: 'Cave Arts',             logo: '/eek_referans/cavearts_logo.svg' },
+  { name: 'Cave Arts IPDC',         logo: '/eek_referans/cavearts_logo.svg' },
   { name: 'Coffy',                 logo: '/eek_referans/coffy_logo.svg' },
-  { name: 'Foramak Makine',        logo: '/eek_referans/foramak_makina_logo.svg' },
-  { name: 'Made in Turan',         logo: '/eek_referans/made_in_turan_logo.svg' },
-  { name: 'Mebe Turizm',           logo: '/eek_referans/mebe_logo.svg' },
-  { name: 'NAS Çevre Danışmanlık', logo: '/eek_referans/nas_cevre_danismanlik_logo.svg' },
-  { name: "R'vize",                logo: "/eek_referans/r'vize_logo.svg" },
+  { name: 'Foramak Makina',        logo: '/eek_referans/foramak_makina_logo.svg' },
+  { name: 'Made İn Turan',         logo: '/eek_referans/made_in_turan_logo.svg' },
+  { name: 'MB Toursim',            logo: '/eek_referans/mebe_logo.svg' },
+  { name: 'Nas Çevre Danışmanlık Mühendislik', logo: '/eek_referans/nas_cevre_danismanlik_logo.svg?v=3' },
+  { name: "r'Vize Dizayn",         logo: "/eek_referans/r'vize_logo.svg" },
 ];
 
 const INPUT_CLS = [
@@ -1256,16 +1256,19 @@ function References() {
             {row1.map((ref) => (
               <div
                 key={ref.name}
-                className="group relative flex items-center justify-center h-[110px] px-8 hover:bg-[#f0f4f8] transition-colors duration-300 overflow-hidden"
+                className="group relative flex flex-col items-center justify-center gap-2.5 h-[130px] px-8 hover:bg-[#f0f4f8] transition-colors duration-300 overflow-hidden"
               >
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                   style={{ background: 'radial-gradient(circle at 50% 50%, rgba(92,141,255,0.08) 0%, transparent 70%)' }} />
                 <img
                   src={ref.logo}
                   alt={ref.name}
-                  className="relative max-h-[60px] max-w-[150px] w-auto object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 ease-out group-hover:scale-[1.07]"
+                  className="relative max-h-[52px] max-w-[140px] w-auto object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 ease-out group-hover:scale-[1.07]"
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                 />
+                <p className="relative text-[10px] font-medium tracking-[0.06em] text-[#8fa5bc] group-hover:text-[#526277] transition-colors duration-300 text-center leading-tight">
+                  {ref.name}
+                </p>
               </div>
             ))}
           </div>
@@ -1278,16 +1281,19 @@ function References() {
             {row2.map((ref) => (
               <div
                 key={ref.name}
-                className="group relative flex items-center justify-center h-[110px] px-8 w-1/4 hover:bg-[#f0f4f8] transition-colors duration-300 overflow-hidden"
+                className="group relative flex flex-col items-center justify-center gap-2.5 h-[130px] px-8 w-1/4 hover:bg-[#f0f4f8] transition-colors duration-300 overflow-hidden"
               >
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                   style={{ background: 'radial-gradient(circle at 50% 50%, rgba(92,141,255,0.08) 0%, transparent 70%)' }} />
                 <img
                   src={ref.logo}
                   alt={ref.name}
-                  className="relative max-h-[60px] max-w-[150px] w-auto object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 ease-out group-hover:scale-[1.07]"
+                  className="relative max-h-[52px] max-w-[140px] w-auto object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 ease-out group-hover:scale-[1.07]"
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                 />
+                <p className="relative text-[10px] font-medium tracking-[0.06em] text-[#8fa5bc] group-hover:text-[#526277] transition-colors duration-300 text-center leading-tight">
+                  {ref.name}
+                </p>
               </div>
             ))}
           </div>
@@ -1303,7 +1309,7 @@ function References() {
                 <div
                   key={`mob-${ref.name}`}
                   className={[
-                    'flex items-center justify-center h-[88px] px-5',
+                    'flex flex-col items-center justify-center gap-2 h-[104px] px-4',
                     'hover:bg-[#f5f7fa] transition-colors duration-300',
                     isRight ? 'border-l border-[#eaecf0]' : '',
                     notFirstRow ? 'border-t border-[#eaecf0]' : '',
@@ -1313,9 +1319,15 @@ function References() {
                   <img
                     src={ref.logo}
                     alt={ref.name}
-                    className="max-h-[52px] max-w-[130px] w-auto object-contain transition-transform duration-300 ease-out hover:scale-[1.15]"
+                    width={90}
+                    height={36}
+                    className="max-h-[36px] max-w-[90px] w-auto object-contain"
+                    loading="lazy"
                     onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                   />
+                  <p className="text-[9px] font-medium tracking-[0.05em] text-[#9aabb8] text-center leading-tight px-1">
+                    {ref.name}
+                  </p>
                 </div>
               );
             })}
