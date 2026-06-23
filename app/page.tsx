@@ -1321,6 +1321,7 @@ function References() {
                     alt={ref.name}
                     className="max-h-[40px] max-w-[100px] w-auto h-auto object-contain"
                     loading="lazy"
+                    style={{ transform: 'translateZ(0)', WebkitTransform: 'translateZ(0)', backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' } as React.CSSProperties}
                     onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                   />
                   <p className="text-[9px] font-medium tracking-[0.05em] text-[#9aabb8] text-center leading-tight px-1">
